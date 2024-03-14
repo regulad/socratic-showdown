@@ -8,6 +8,7 @@
     "react-internal.js"
   ],
   "devDependencies": {
+    "eslint-plugin-turbo": "^1.12.5",
     "@vercel/style-guide": "^5.2.0",
     "eslint-config-turbo": "^1.12.4",
     "eslint-config-prettier": "^9.1.0",

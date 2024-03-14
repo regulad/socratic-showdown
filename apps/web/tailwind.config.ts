@@ -1,19 +1,15 @@
-import type { Config } from "tailwindcss";
+// tailwind config is required for editor support
 
-const config: Config = {
+import type { Config } from "tailwindcss";
+import sharedConfig from "@repo/tailwind-config";
+
+const config: Pick<Config, "content" | "presets"> = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./public/**/*.html",
     "./node_modules/flowbite-react/lib/**/*.js",
-    "./node_modules/flowbite/**/*.js"
   ],
-  theme: {
-  },
-  plugins: [
-    require('flowbite/plugin')
-  ]
+  presets: [sharedConfig],
 };
 
 export default config;
