@@ -1,13 +1,42 @@
-import { Suspense } from "react";
-import NavbarServer from "./navbarServer";
-import NavbarClient from "./navbarClient";
+import {
+  Button,
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarLink,
+  NavbarToggle,
+} from "flowbite-react";
+import Link from "next/link";
+import { type ReactNode } from "react";
 
-export type NavbarProps = {};
-
-export default function SocraticNavbar(props: NavbarProps) {
+export default function SocraticNavbar(): ReactNode {
   return (
-    <Suspense fallback={<NavbarServer {...props} />}>
-      <NavbarClient {...props} />
-    </Suspense>
+    <Navbar className="bg-gray-300 dark:bg-gray-600" fluid rounded>
+      <NavbarBrand as={Link} href="/">
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+          Socratic Showdown
+        </span>
+      </NavbarBrand>
+      <div className="flex md:order-2">
+        <Button as={Link} href="/signup">
+          Sign Up
+        </Button>
+        <NavbarToggle />
+      </div>
+      <NavbarCollapse>
+        <NavbarLink active as={Link} href="/">
+          Home
+        </NavbarLink>
+        <NavbarLink as={Link} href="/about">
+          About
+        </NavbarLink>
+        <NavbarLink as={Link} href="/contact">
+          Contact
+        </NavbarLink>
+        <NavbarLink as={Link} href="/login">
+          Login
+        </NavbarLink>
+      </NavbarCollapse>
+    </Navbar>
   );
 }

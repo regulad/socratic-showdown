@@ -1,5 +1,7 @@
+/* eslint-disable -- see https://supabase.com/docs/guides/auth/server-side/nextjs */
+
 import { createBrowserClient } from "@supabase/ssr";
-import { SupabaseClient } from "@supabase/supabase-js";
+import type { SupabaseClient } from "@supabase/supabase-js";
 
 export function createClient(): SupabaseClient {
   return createBrowserClient(

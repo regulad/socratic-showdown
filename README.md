@@ -69,6 +69,16 @@ Next, you can link your Turborepo to your Remote Cache by running the following 
 npx turbo link
 ```
 
+## Pre-commit
+
+Automagically run `lint` and `format` on staged files before commit.
+
+```bash
+pnpm install
+pipx install pre-commit
+pre-commit install
+```
+
 ## Useful Links
 
 Learn more about the power of Turborepo:

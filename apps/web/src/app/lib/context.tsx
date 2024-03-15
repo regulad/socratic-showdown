@@ -1,7 +1,11 @@
 "use client";
 
-import { ChildrenProps } from "./types";
+import { type ReactNode } from "react";
 
-export default function ContextProvider({ children }: ChildrenProps) {
+export default function ContextProvider({
+  children,
+}: {
+  children?: ReactNode;
+}): ReactNode {
   return <>{children}</>;
 }

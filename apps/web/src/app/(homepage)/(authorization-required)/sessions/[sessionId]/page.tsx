@@ -5,5 +5,9 @@ export default function Page({
 }: {
   params: { sessionId: string };
 }): ReactNode {
-  return <p>{params.sessionId}</p>;
+  return (
+    <div>
+      <h1>Session: {params.sessionId}</h1>
+    </div>
+  );
 }

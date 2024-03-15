@@ -1,11 +1,15 @@
+import { type ReactNode } from "react";
 import SocraticNavbar from "../ui/navbar/navbar";
-import { ChildrenProps } from "../lib/types";
 
-export default function Layout({ children }: ChildrenProps) {
+export default function Layout({
+  children,
+}: {
+  children?: ReactNode;
+}): ReactNode {
   return (
     <>
       <SocraticNavbar />
-      <div className={"md:container md:mx-auto"}>{children}</div>
+      <div className="md:container md:mx-auto">{children}</div>
     </>
   );
 }

@@ -1,6 +1,8 @@
-import { createServerClient, type CookieOptions } from "@supabase/ssr";
+/* eslint-disable -- see https://supabase.com/docs/guides/auth/server-side/nextjs */
+
+import { type CookieOptions, createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
-import { SupabaseClient } from "@supabase/supabase-js";
+import type { SupabaseClient } from "@supabase/supabase-js";
 
 export function createClient(): SupabaseClient {
   const cookieStore = cookies();
