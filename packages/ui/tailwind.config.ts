@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 import sharedConfig from "@repo/tailwind-config";
 
 const config: Pick<Config, "prefix" | "presets" | "content"> = {
-  content: ["./src/**/*.tsx", "./node_modules/flowbite-react/lib/**/*.js"],
+  content: ["./src/**/*.tsx", ...sharedConfig.content],
   prefix: "ui-",
   presets: [sharedConfig],
 };

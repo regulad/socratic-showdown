@@ -7,7 +7,7 @@ const config: Pick<Config, "content" | "presets"> = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./public/**/*.html",
-    "./node_modules/flowbite-react/lib/**/*.js",
+    ...sharedConfig.content
   ],
   presets: [sharedConfig],
 };
