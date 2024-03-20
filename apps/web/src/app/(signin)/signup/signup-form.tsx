@@ -5,7 +5,7 @@ import Link from "next/link";
 // eslint-disable-next-line import/named -- weird bug
 import { useFormState } from "react-dom";
 import { type ReactNode, useState } from "react";
-import PasswordPopover from "../../ui/flowbite/password-popover";
+import PasswordPopover from "@repo/ui/password-popover";
 import { signup, type SignupState } from "./actions";
 
 const initialState = { message: null, errors: {} } satisfies SignupState;

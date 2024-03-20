@@ -32,6 +32,9 @@ importers:
       '@heroicons/react':
         specifier: ^2.1.1
         version: 2.1.1(react@18.2.0)
+      '@repo/database':
+        specifier: workspace:*
+        version: link:../../packages/database
       '@repo/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -56,9 +59,6 @@ importers:
       clsx:
         specifier: ^2.1.0
         version: 2.1.0
-      database:
-        specifier: workspace:*
-        version: link:../../packages/database
       flowbite:
         specifier: ^2.3.0
         version: 2.3.0
@@ -173,11 +173,10 @@ importers:
   packages/typescript-config: {}
 
   packages/ui:
-    dependencies:
+    devDependencies:
       '@heroicons/react':
         specifier: ^2.1.1
         version: 2.1.1(react@18.2.0)
-    devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../eslint-config
@@ -790,7 +789,6 @@ packages:
       react: '>= 16'
     dependencies:
       react: 18.2.0
-    dev: false
 
   /@humanwhocodes/config-array@0.11.14:
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}

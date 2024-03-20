@@ -4,7 +4,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { type ReactNode } from "react";
 import ContextProvider from "./lib/context";
-// import "@repo/ui/styles.css";
+
+import "@repo/ui/styles.css";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });

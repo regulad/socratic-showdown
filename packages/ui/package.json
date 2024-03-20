@@ -6,26 +6,24 @@
   ],
   "exports": {
     "./styles.css": "./dist/index.css",
-    "./card": "./src/card.tsx"
+    "./password-popover": "./src/password-popover.tsx"
   },
   "license": "MIT",
   "scripts": {
-    "build": "tailwindcss -i ./src/styles.css -o dist/index.css",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
     "lint": "eslint src/ --max-warnings 0",
     "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
     "type-check": "tsc --noEmit",
     "generate:component": "turbo gen react-component"
   },
   "peerDependencies": {
-    "flowbite": "^2.3.0",
-    "flowbite-react": "^0.7.3",
-    "react": "^18.2.0",
-    "tailwindcss": "^3.4.1"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@heroicons/react": "^2.1.1",
     "@turbo/gen": "^1.12.4",
     "@types/react": "^18.2.61",
     "autoprefixer": "^10.4.18",
@@ -37,8 +35,5 @@
     "tailwindcss": "^3.4.1",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "@heroicons/react": "^2.1.1"
   }
 }
