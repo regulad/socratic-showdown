@@ -4,7 +4,8 @@ export default function Page(): ReactNode {
   return (
     <section>
       <h1 className="heading">
-        <span className="heading-gradient">Gamify</span> your English classroom.
+        <span className="heading-gradient">Gamify</span> your classroom
+        discussions.
       </h1>
     </section>
   );

@@ -14,7 +14,7 @@ export default function SocraticNavbar(): ReactNode {
     <Navbar className="bg-gray-300 dark:bg-gray-600" fluid rounded>
       <NavbarBrand as={Link} href="/">
         <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-          Socratic Showdown
+          SocraTalk
         </span>
       </NavbarBrand>
       <div className="flex md:order-2">
