@@ -42,6 +42,16 @@ export default function SignupForm(): ReactNode {
             </p>
           ))}
         </div>
+        <p className="mt-2 text-sm text-gray-400">
+          Your data will be stored in accordinance with our{" "}
+          <Link
+            className="font-medium text-primary-600 hover:underline dark:text-primary-500"
+            href="/privacy-policy"
+          >
+            privacy policy
+          </Link>
+          .
+        </p>
       </div>
       <div>
         <div className="mb-2 block">

@@ -49,7 +49,8 @@ export default function PasswordPopover({
   children: ReactNode;
 }): ReactNode {
   let passwordLengthRangeBars: ReactNode;
-  if (passwordAttempt.length >= 12) {
+  const passwordLength = passwordAttempt.length;
+  if (passwordLength >= 12) {
     passwordLengthRangeBars = (
       <>
         <div className="h-1 bg-green-400 dark:bg-green-500" />
@@ -58,7 +59,7 @@ export default function PasswordPopover({
         <div className="h-1 bg-green-400 dark:bg-green-500" />
       </>
     );
-  } else if (passwordAttempt.length >= 8) {
+  } else if (passwordLength >= 8) {
     passwordLengthRangeBars = (
       <>
         <div className="h-1 bg-green-400 dark:bg-green-500" />
@@ -67,7 +68,7 @@ export default function PasswordPopover({
         <div className="h-1 bg-gray-200 dark:bg-gray-600" />
       </>
     );
-  } else if (passwordAttempt.length >= 6) {
+  } else if (passwordLength >= 6) {
     passwordLengthRangeBars = (
       <>
         <div className="h-1 bg-orange-300 dark:bg-orange-400" />
@@ -76,12 +77,12 @@ export default function PasswordPopover({
         <div className="h-1 bg-gray-200 dark:bg-gray-600" />
       </>
     );
-  } else if (passwordAttempt.length >= 1) {
+  } else if (passwordLength >= 1) {
     passwordLengthRangeBars = (
       <>
-        <div className="h-1 bg-green-400 dark:bg-green-500" />
-        <div className="h-1 bg-green-400 dark:bg-green-500" />
-        <div className="h-1 bg-green-400 dark:bg-green-500" />
+        <div className="h-1 bg-red-400 dark:bg-red-500" />
+        <div className="h-1 bg-gray-200 dark:bg-gray-600" />
+        <div className="h-1 bg-gray-200 dark:bg-gray-600" />
         <div className="h-1 bg-gray-200 dark:bg-gray-600" />
       </>
     );

@@ -7,7 +7,7 @@ const config: Pick<Config, "content" | "presets"> = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./public/**/*.html",
-    ...sharedConfig.content
+    ...sharedConfig.content,
   ],
   presets: [sharedConfig],
 };

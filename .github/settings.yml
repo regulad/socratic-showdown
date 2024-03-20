@@ -8,7 +8,7 @@ repository:
   description: Gamify your classroom discussions.
 
   # A URL with more information about the repository
-  homepage: https://socratic-showdown.vercel.app/
+  homepage: https://socratalk.live
 
   # Either `true` to make the repository private, or `false` to make it public.
   private: true
