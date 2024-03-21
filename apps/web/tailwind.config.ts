@@ -7,6 +7,7 @@ const config: Pick<Config, "content" | "presets"> = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
     "./public/**/*.html",
+    // @ts-ignore -- content is ok to expand
     ...sharedConfig.content,
   ],
   presets: [sharedConfig],

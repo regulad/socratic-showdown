@@ -104,26 +104,32 @@ export default function PasswordPopover({
   return (
     <Popover
       content={
-        <div className="space-y-2 p-3">
+        <div className="space-y-2 h-full w-full p-3">
           <h3 className="font-semibold text-gray-900 dark:text-white">
             Must have at least 6 characters!
           </h3>
           <div className="grid grid-cols-4 gap-2">
             {passwordLengthRangeBars}
           </div>
-          <p>Your password needs...</p>
+          <p className="text-gray-900 dark:text-white">
+            Your password needs...
+          </p>
           <ul>
             <li className="mb-1 flex items-center">
               {passwordHasUpperCase ? <FlowbiteCheck /> : <FlowbiteCross />}
-              Upper case letters
+              <span className="text-gray-900 dark:text-white">
+                Upper case letter(s)
+              </span>
             </li>
             <li className="mb-1 flex items-center">
               {passwordHasLowerCase ? <FlowbiteCheck /> : <FlowbiteCross />}
-              Lower case letters
+              <span className="text-gray-900 dark:text-white">
+                Lower case letter(s)
+              </span>
             </li>
             <li className="mb-1 flex items-center">
               {passwordHasNumber ? <FlowbiteCheck /> : <FlowbiteCross />}
-              Numbers
+              <span className="text-gray-900 dark:text-white">Number(s)</span>
             </li>
           </ul>
         </div>

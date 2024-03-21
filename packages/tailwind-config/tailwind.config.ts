@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 
-const config: Omit<Config, "content"> = {
+const config: Config = {
   content: [
     // https://flowbite.com/docs/getting-started/next-js/
     "./node_modules/flowbite-react/lib/**/*.js",
