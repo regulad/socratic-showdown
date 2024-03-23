@@ -16,8 +16,8 @@ module.exports = withSentryConfig(
 
     // Suppresses source map uploading logs during build
     silent: true,
-    org: "regular-solutions-llc",
-    project: "socratic-showdown",
+    org: "regulad",
+    project: "socratalk-web",
   },
   {
     // For all available options, see:
